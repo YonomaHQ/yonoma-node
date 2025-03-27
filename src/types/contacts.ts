@@ -3,17 +3,15 @@ type ContactStatus = "Subscribed" | "Unsubscribed";
 export type CreateContactOptions = {
     email: string;
     status: ContactStatus;
-    data: {
-        firstName: string;
-        lastName: string;
-        phone: string;
-        gender: string;
-        address: string;
-        city: string;
-        state: string;
-        country: string;
-        zipcode: string;
-    };
+    firstName: string;
+    lastName: string;
+    phone: string;
+    gender: string;
+    address: string;
+    city: string;
+    state: string;
+    country: string;
+    zipcode: string;
 };
 export type CreateContactResponse = {
     statusCode: number;
